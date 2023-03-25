@@ -1,0 +1,35 @@
+.row {
+    padding: 20px;
+}
+
+div {
+    background: #1a1a1a;
+}
+
+h1,
+h3, h6,
+p {
+    color: rgb(213, 205, 205);
+}
+
+h1,
+h3 {
+    display: inline;
+}
+h2 {
+    color: rgb(213, 205, 205);
+    margin-left: -5%;
+}
+
+ul {
+    color: rgb(213, 205, 205);
+}
+
+.years {
+    margin-left: 10%;
+}
+
+.education {
+    box-shadow:  0px 3px rgb(213, 205, 205);
+    
+}

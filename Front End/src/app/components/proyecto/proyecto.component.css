@@ -1,0 +1,36 @@
+.row {
+    padding: 20px;
+    background-color: #121212;
+    color: rgb(213, 205, 205);
+}
+
+.contenedor {
+    width: auto;
+}
+.parte1, .parte2{
+    display: inline-block;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+
+.img-proyecto{
+    box-shadow: 5px 5px 10px  rgba(245, 245, 220, 0.344);
+    border-radius: 2%;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-right: 20px;
+}
+.title2 {
+    
+    margin-bottom: 10px;
+    
+}
+
+.contenedor {
+    margin-left: 30px;
+}
+
+.img-proyecto {
+    margin-right: 500px;
+}
