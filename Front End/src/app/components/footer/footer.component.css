@@ -10,4 +10,10 @@ footer {
     flex-direction: column;
     text-align: center;
     box-shadow: 2px -2px 5px beige ;
+    
+
+}
+b {
+    display: flex;
+    justify-content: space-around;
 }
