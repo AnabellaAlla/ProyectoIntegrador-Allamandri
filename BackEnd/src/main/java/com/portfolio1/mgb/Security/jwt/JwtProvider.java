@@ -21,7 +21,7 @@ public class JwtProvider {
 
         @Value("jwt.secret")
         private String secret;
-        @Value("jwt.expiration")
+        @Value("${jwt.expiration}")
         private int expiration;
         
         public String generateToken(Authentication authentication) {
@@ -39,17 +39,17 @@ public class JwtProvider {
         public boolean validateToken (String token) {
             try {
                 Jwts.parser().setSigningKey(secret).parseClaimsJws(token);
-                return true;
+                return true;     
             } catch (MalformedJwtException e) {
                 logger.error("Token mal formado");
             }catch (UnsupportedJwtException e) {
-                logger.error("Token no soportado");
-            } catch (ExpiredJwtException e) {
+                logger.error("Toke no soportado");
+            }catch (ExpiredJwtException e) {
                 logger.error("Token expirado");
-            } catch (IllegalArgumentException e) {
+            }catch (IllegalArgumentException e) {
                 logger.error("Token vacio");
             }catch (SignatureException e) {
-                logger.error("Firma no válida");
+                logger.error("Firma no valida");
             }
             return false;
         }

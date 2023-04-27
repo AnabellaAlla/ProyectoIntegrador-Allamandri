@@ -33,7 +33,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth")
 @CrossOrigin(origins = {"https://mgbfrontend.web.app","http://localhost:4200"})
 public class AuthController {
- @Autowired
+    @Autowired
     PasswordEncoder passwordEncoder;
     @Autowired
     AuthenticationManager authenticationManager;

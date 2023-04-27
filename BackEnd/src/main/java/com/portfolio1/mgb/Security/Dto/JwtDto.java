@@ -4,10 +4,6 @@ package com.portfolio1.mgb.Security.Dto;
 import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 
-/**
- *
- * @author Anabella
- */
 public class JwtDto {
     private String token;
     private String bearer = "Bearer";
@@ -55,4 +51,5 @@ public class JwtDto {
     public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
         this.authorities = authorities;
     }
+    
 }
